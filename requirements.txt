@@ -1,0 +1,13 @@
+langchain
+langgraph
+python-dotenv
+langchain_groq
+beautifulsoup4
+langchainhub
+langchain-community
+tavily-python
+langchain-chroma
+black
+isort
+pytest
+langchain_openai
