@@ -20,12 +20,12 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size = 250, chunk_overlap =
 doc_splits = text_splitter.split_documents(docs_list)
 
 # Save the document embeddings to this project root dir.
-vectorstore = Chroma.from_documents(
-    documents= doc_splits,
-    collection_name='rag-chroma',
-    embedding=OpenAIEmbeddings(),
-    persist_directory='./.chroma',
-)
+# vectorstore = Chroma.from_documents(
+#     documents= doc_splits,
+#     collection_name='rag-chroma',
+#     embedding=OpenAIEmbeddings(),
+#     persist_directory='./.chroma',
+# )
 
 retriever = Chroma(
     collection_name='rag-chroma',

@@ -1,3 +1,5 @@
+# file names that should not pushed to github
 .env
 venv
-.chroma
+rag.egg-info
+__pycache__
